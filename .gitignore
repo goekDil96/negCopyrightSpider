@@ -1,0 +1,7 @@
+venv
+data
+__pycache__
+scripts
+negCopyrightSpider/__pycache__
+negCopyrightSpider/spider/__pycache__
+config/.env
