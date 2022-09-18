@@ -19,7 +19,7 @@ How to download the application
 1. Clone the Repo from GitHub
 
     ```bash
-    git clone 
+    git clone https://github.com/goekDil96/negCopyrightSpider.git
     ```
 
 How to create the database in postgres
@@ -34,7 +34,7 @@ How to create the database in postgres
         copyright_string VARCHAR PRIMARY KEY,
         source VARCHAR,
         datetime VARCHAR,
-        is_no_copyright_statement INT
+        is_no_copyright_statement BOOLEAN
     );
     ```
 
@@ -82,3 +82,10 @@ How to load the prepared Data into your Database
 ------------------------------------------------
 
 To be explained.
+
+How to start the Web GUI
+------------------------
+
+1. Run the file "app.py"
+
+2. Follow the Web Adress: "http://127.0.0.1:5000/"

@@ -3,7 +3,7 @@ import os
 import json
 
 import random
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, render_template_string
 import psycopg2
 import pandas as pd
 
@@ -27,6 +27,10 @@ connection = psycopg2.connect(
     dbname=database)
 connection.set_client_encoding('UTF8')
 cur = connection.cursor()
+
+@app.route("/")
+def index():
+    return render_template_string("""<a href="/crawledExamples/">Get to database</a></br><a href="/evaluate_string">Evaluate strings</a>""")
 
 @app.route('/crawledExamples/', defaults={'n' : None})
 @app.route("/crawledExamples/<n>")
