@@ -1,3 +1,7 @@
+#
+# SPDX-FileCopyrightText: Copyright 2022 Dilara Göksu
+#
+
 from base64 import encode
 from bs4 import BeautifulSoup
 
